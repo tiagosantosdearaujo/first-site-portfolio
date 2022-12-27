@@ -19,19 +19,38 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-
+    <!-- Carregando o arquivo CSS -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Carregando o arquivo JS -->
+    <script src="index.js"></script>
   </head>
   <body>
     <section class="section-hero">
       <div class="section-hero-navbar">
         <h2 class="section-hero-navbar-name">João Ferreira</h2>
         <div class="section-hero-navbar-link">
-          <a class="section-hero-navbar-link-text" href="">Habilidades</a>
-          <a class="section-hero-navbar-link-text" href="">Portfólio</a>
-          <a class="section-hero-navbar-link-text" href="">Experiências</a>
+          <a
+            onclick="onClickScrollTo('section-skills')"
+            class="section-hero-navbar-link-text"
+            >Habilidades</a
+          >
+          <a
+            onclick="onClickScrollTo('section-projects')"
+            class="section-hero-navbar-link-text"
+            >Portfólio</a
+          >
+          <a
+            onclick="onClickScrollTo('section-experiences')"
+            class="section-hero-navbar-link-text"
+            >Experiências</a
+          >
         </div>
-        <button class="section-hero-navbar-button">CONTATO</button>
+        <button
+          class="section-hero-navbar-button"
+          onclick="onClickScrollTo('section-contact')"
+        >
+          CONTATO
+        </button>
       </div>
       <div class="section-hero-container">
         <div class="section-hero-container-text">
@@ -42,7 +61,10 @@
             Programador desde 2021, com foco em desenvolvimento web e mobile,
             atuando em mais de 20 projetos.
           </h3>
-          <button class="section-hero-container-text-button">
+          <button
+            class="section-hero-container-text-button"
+            onclick="onClickScrollTo('section-contact')"
+          >
             ENTRAR EM CONTATO
           </button>
           <div>
@@ -85,7 +107,7 @@
         </div>
       </div>
     </section>
-    <section class="section-skills">
+    <section class="section-skills" id="section-skills">
       <h2 class="section-skills-title">Habilidades que</h2>
       <h2 class="section-skills-green-title">domino.</h2>
       <div class="section-skills-container">
@@ -176,7 +198,7 @@
         </div>
       </div>
     </section>
-    <section class="section-projects">
+    <section class="section-projects" id="section-projects">
       <h2 class="section-projects-title">Porfólio</h2>
       <h2 class="section-projects-green-title">de projetos.</h2>
       <div class="section-projects-card-container">
@@ -267,7 +289,7 @@
         </div>
       </div>
     </section>
-    <section class="section-experiences">
+    <section class="section-experiences" id="section-experiences">
       <h2 class="section-experiences-title">Experiências</h2>
       <h2 class="section-experiences-green-title">profissionais.</h2>
       <div class="section-experiences-card-list-container">
@@ -314,7 +336,7 @@
         </div>
       </div>
     </section>
-    <section class="section-contact">
+    <section class="section-contact" id="section-contact">
       <h2 class="section-contact-title">Como posso</h2>
       <h2 class="section-contact-green-title">te ajudar?</h2>
       <p class="section-contact-text">
