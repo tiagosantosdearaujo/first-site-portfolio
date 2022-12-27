@@ -16,7 +16,8 @@ a {
 .section-hero {
   display: flex;
   flex-direction: column;
-  width: 1440px;
+  align-items: center;
+  width: 100vh;
   height: 940px;
   background-color: #fefefe;
 }
@@ -581,8 +582,8 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100vh;
-  height: 158px;
+  width: 1440px;
+  height: 156px;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 112px;
