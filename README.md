@@ -6,6 +6,10 @@ The main objective is to create a website for developers, they can show suas exp
 
 I used responsiveness and json techniques.
 
+# Preview
+
+<img src="https://github.com/tiagosantosdearaujo/first-site-portfolio/blob/main/preview.jpg" height="500"/>
+
 ## Main concepts applied
 
 - Flexbox.
