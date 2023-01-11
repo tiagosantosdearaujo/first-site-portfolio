@@ -1,0 +1,177 @@
+@media screen and (max-device-width: 768px) {
+  header {
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .header-container-navbar {
+    width: 100vw;
+
+    margin-top: 0px;
+  }
+  .header-navbar-text {
+    display: none;
+  }
+  .section-hero {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .section-hero-container-img {
+    width: 40%;
+    margin-top: 25px;
+  }
+
+  .section-hero-container-text {
+    width: 100%;
+    align-items: center;
+
+    margin-top: 25px;
+  }
+
+  .section-hero-container-text-title {
+    width: 100%;
+    font-size: 60px;
+    line-height: normal;
+  }
+  .section-hero-container-text-subtitle {
+    width: 100%;
+
+    margin: 20px;
+  }
+
+  .section-skills {
+    width: 100%;
+  }
+  .section-skills-title {
+    font-size: 60px;
+  }
+  .section-skills-green-title {
+    font-size: 60px;
+  }
+  .section-skills-card {
+    width: 100%;
+    min-height: 0px;
+    margin-right: 0px;
+    margin-bottom: 3%;
+  }
+  .section-projects-title {
+    font-size: 60px;
+  }
+  .section-projects-green-title {
+    font-size: 60px;
+  }
+  .section-projects-card {
+    max-width: 537.39px;
+    min-width: 299.5px;
+    margin-bottom: 3%;
+    margin-right: 3%;
+  }
+  .section-experiences-title {
+    font-size: 60px;
+  }
+  .section-experiences-green-title {
+    font-size: 60px;
+  }
+  .section-experiences-card-list-container {
+    width: 84.9vw;
+    height: 50vh;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .section-experiences-card {
+    height: 100%;
+    margin-bottom: 3%;
+  }
+  .section-contact-title {
+    font-size: 60px;
+  }
+  .section-contact-green-title {
+    font-size: 60px;
+  }
+  .section-footer-cotainer {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    margin-left: 0%;
+    margin-right: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .section-footer-name {
+    margin-left: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-device-width: 508px) {
+  .section-hero-container-text-title {
+    font-size: 34px;
+  }
+  .section-hero-container-text-subtitle {
+    font-size: 16px;
+  }
+  .section-skills-title {
+    font-size: 34px;
+    line-height: 0px;
+  }
+  .section-skills-green-title {
+    font-size: 34px;
+  }
+  .section-projects-title {
+    font-size: 34px;
+    line-height: 0px;
+  }
+  .section-projects-green-title {
+    font-size: 34px;
+  }
+  .section-experiences-title {
+    font-size: 34px;
+    line-height: 0px;
+  }
+  .section-experiences-green-title {
+    font-size: 34px;
+  }
+  .section-contact-title {
+    font-size: 34px;
+    line-height: 0px;
+  }
+  .section-contact-green-title {
+    font-size: 34px;
+  }
+  .section-footer-cotainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-device-width: 420px) {
+  section {
+    margin: 0px 0px 50px 0px;
+  }
+
+  .section-hero-container-text-title {
+    font-size: 26px;
+  }
+  .section-hero-container-text-subtitle {
+    font-size: 14px;
+    margin: 8px;
+  }
+  .section-skills-container {
+    width: 90%;
+  }
+
+  .section-projects-card {
+    min-width: 290px;
+  }
+
+  .section-contact-text {
+    width: 100%;
+  }
+  .section-experiences-card {
+    height: 110%;
+  }
+}

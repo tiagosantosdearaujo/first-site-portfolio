@@ -19,40 +19,44 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <!-- Carregando o arquivo CSS -->
+    <!-- Carregando o arquivos CSS -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
     <!-- Carregando o arquivo JS -->
     <script src="index.js"></script>
   </head>
   <body>
-    <section class="section-hero">
-      <div class="section-hero-navbar">
-        <h2 class="section-hero-navbar-name">João Ferreira</h2>
-        <div class="section-hero-navbar-link">
+    <header>
+      <div class="header-container-navbar">
+        <h2 class="header-navbar-name">João Ferreira</h2>
+        <div class="header-navbar-container-links">
           <a
             onclick="onClickScrollTo('section-skills')"
-            class="section-hero-navbar-link-text"
+            class="header-navbar-text"
             >Habilidades</a
           >
           <a
             onclick="onClickScrollTo('section-projects')"
-            class="section-hero-navbar-link-text"
+            class="header-navbar-text"
             >Portfólio</a
           >
           <a
             onclick="onClickScrollTo('section-experiences')"
-            class="section-hero-navbar-link-text"
+            class="header-navbar-text"
             >Experiências</a
           >
         </div>
         <button
-          class="section-hero-navbar-button"
+          class="header-navbar-button"
           onclick="onClickScrollTo('section-contact')"
         >
           CONTATO
         </button>
       </div>
-      <div class="section-hero-container">
+    </header>
+
+    <section>
+      <div class="section-hero">
         <div class="section-hero-container-text">
           <h1 class="section-hero-container-text-title">
             Olá, muito prazer! Sou o João Ferreira.
@@ -67,7 +71,7 @@
           >
             ENTRAR EM CONTATO
           </button>
-          <div>
+          <div class="section-container-icons">
             <a onclick="onClickLink('https://github.com/tiagosantosdearaujo')">
               <img
                 class="section-hero-container-icons-icon"
@@ -98,167 +102,115 @@
             </a>
           </div>
         </div>
-        <div class="">
+        <div class="section-hero-container-img">
           <img
-            class="section-hero-container-img-profile"
+            class="section-hero-img-profile"
             src="img/profile/img_exemple.png"
             alt=""
           />
         </div>
       </div>
     </section>
-    <section class="section-skills" id="section-skills">
-      <h2 class="section-skills-title">Habilidades que</h2>
-      <h2 class="section-skills-green-title">domino.</h2>
-      <div class="section-skills-container">
-        <div class="section-skills-card">
-          <div class="section-skills-card-header">
-            <div class="section-skills-card-icon-container">
-              <img
-                class="section-skills-card-icon-container-img"
-                src="img/icon/icon_code.png"
-                alt=""
-              />
+
+    <section>
+      <div class="section-skills" id="section-skills">
+        <h2 class="section-skills-title">Habilidades que</h2>
+        <h2 class="section-skills-green-title">domino.</h2>
+        <div class="section-skills-container">
+          <div class="section-skills-card">
+            <div class="section-skills-card-header">
+              <div class="section-skills-card-icon-container">
+                <img
+                  class="section-skills-card-icon-container-img"
+                  src="img/icon/icon_code.png"
+                  alt=""
+                />
+              </div>
+              <h2 class="section-skills-card-text">Habilidades Gerais</h2>
+              <p class="section-skills-card-subtitle">
+                Tecnologias que utilizo no dia a dia da programação.
+              </p>
             </div>
-            <h2 class="section-skills-card-text">Habilidades Gerais</h2>
-            <p class="section-skills-card-subtitle">
-              Tecnologias que utilizo no dia a dia da programação.
-            </p>
-          </div>
-          <div class="section-skills-card-list">
-            <ul>
-              <li class="section-skills-card-list-text">Git</li>
-              <li class="section-skills-card-list-text">Github</li>
-              <li class="section-skills-card-list-text">Docker</li>
-              <li class="section-skills-card-list-text">VScode</li>
-              <li class="section-skills-card-list-text">Portugol</li>
-              <li class="section-skills-card-list-text">Insomnia</li>
-            </ul>
-          </div>
-        </div>
-        <div class="section-skills-card">
-          <div class="section-skills-card-header">
-            <div class="section-skills-card-icon-container">
-              <img
-                class="section-skills-card-icon-container-img"
-                src="img/icon/icon_front_end.png"
-                alt=""
-              />
+            <div class="section-skills-card-list">
+              <ul>
+                <li class="section-skills-card-list-text">Git</li>
+                <li class="section-skills-card-list-text">Github</li>
+                <li class="section-skills-card-list-text">Docker</li>
+                <li class="section-skills-card-list-text">VScode</li>
+                <li class="section-skills-card-list-text">Portugol</li>
+                <li class="section-skills-card-list-text">Insomnia</li>
+              </ul>
             </div>
-            <h2 class="section-skills-card-text">Front-End</h2>
-            <p class="section-skills-card-subtitle">
-              Ferramentas utilizadas para criação de sistemas web.
-            </p>
           </div>
-          <div class="section-skills-card-list">
-            <ul>
-              <li class="section-skills-card-list-text">JavaScript</li>
-              <li class="section-skills-card-list-text">HTML</li>
-              <li class="section-skills-card-list-text">CSS</li>
-              <li class="section-skills-card-list-text">React.js</li>
-              <li class="section-skills-card-list-text">Styled Components</li>
-              <li class="section-skills-card-list-text">Context API</li>
-              <li class="section-skills-card-list-text">Axios</li>
-              <li class="section-skills-card-list-text">React Query</li>
-              <li class="section-skills-card-list-text">Atomic Design</li>
-              <li class="section-skills-card-list-text">React Router</li>
-            </ul>
-          </div>
-        </div>
-        <div class="section-skills-card">
-          <div class="section-skills-card-header">
-            <div class="section-skills-card-icon-container">
-              <img
-                class="section-skills-card-icon-container-img"
-                src="img/icon/icon_back_end.png"
-                alt=""
-              />
+          <div class="section-skills-card">
+            <div class="section-skills-card-header">
+              <div class="section-skills-card-icon-container">
+                <img
+                  class="section-skills-card-icon-container-img"
+                  src="img/icon/icon_front_end.png"
+                  alt=""
+                />
+              </div>
+              <h2 class="section-skills-card-text">Front-End</h2>
+              <p class="section-skills-card-subtitle">
+                Ferramentas utilizadas para criação de sistemas web.
+              </p>
             </div>
-            <h2 class="section-skills-card-text">Back-End</h2>
-            <p class="section-skills-card-subtitle">
-              Controle de banco de dados e aplições na nuvem.
-            </p>
+            <div class="section-skills-card-list">
+              <ul>
+                <li class="section-skills-card-list-text">JavaScript</li>
+                <li class="section-skills-card-list-text">HTML</li>
+                <li class="section-skills-card-list-text">CSS</li>
+                <li class="section-skills-card-list-text">React.js</li>
+                <li class="section-skills-card-list-text">Styled Components</li>
+                <li class="section-skills-card-list-text">Context API</li>
+                <li class="section-skills-card-list-text">Axios</li>
+                <li class="section-skills-card-list-text">React Query</li>
+                <li class="section-skills-card-list-text">Atomic Design</li>
+                <li class="section-skills-card-list-text">React Router</li>
+              </ul>
+            </div>
           </div>
-          <div class="section-skills-card-list">
-            <ul>
-              <li class="section-skills-card-list-text">JavaScript</li>
-              <li class="section-skills-card-list-text">Node.js</li>
-              <li class="section-skills-card-list-text">SQL</li>
-              <li class="section-skills-card-list-text">Express</li>
-              <li class="section-skills-card-list-text">Autenticação JWT</li>
-              <li class="section-skills-card-list-text">Sequelize</li>
-              <li class="section-skills-card-list-text">Mongoose</li>
-              <li class="section-skills-card-list-text">Postgres</li>
-              <li class="section-skills-card-list-text">MongoDB</li>
-              <li class="section-skills-card-list-text">MongoDB Atlas</li>
-              <li class="section-skills-card-list-text">Heroku</li>
-              <li class="section-skills-card-list-text">AWS</li>
-            </ul>
+          <div class="section-skills-card">
+            <div class="section-skills-card-header">
+              <div class="section-skills-card-icon-container">
+                <img
+                  class="section-skills-card-icon-container-img"
+                  src="img/icon/icon_back_end.png"
+                  alt=""
+                />
+              </div>
+              <h2 class="section-skills-card-text">Back-End</h2>
+              <p class="section-skills-card-subtitle">
+                Controle de banco de dados e aplições na nuvem.
+              </p>
+            </div>
+            <div class="section-skills-card-list">
+              <ul>
+                <li class="section-skills-card-list-text">JavaScript</li>
+                <li class="section-skills-card-list-text">Node.js</li>
+                <li class="section-skills-card-list-text">SQL</li>
+                <li class="section-skills-card-list-text">Express</li>
+                <li class="section-skills-card-list-text">Autenticação JWT</li>
+                <li class="section-skills-card-list-text">Sequelize</li>
+                <li class="section-skills-card-list-text">Mongoose</li>
+                <li class="section-skills-card-list-text">Postgres</li>
+                <li class="section-skills-card-list-text">MongoDB</li>
+                <li class="section-skills-card-list-text">MongoDB Atlas</li>
+                <li class="section-skills-card-list-text">Heroku</li>
+                <li class="section-skills-card-list-text">AWS</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section-projects" id="section-projects">
-      <h2 class="section-projects-title">Porfólio</h2>
-      <h2 class="section-projects-green-title">de projetos.</h2>
-      <div class="section-projects-card-container">
-        <div class="section-projects-card">
-          <img
-            class="section-projects-card-img"
-            src="img/projects/project_1.png"
-            alt=""
-          />
-          <h2 class="section-projects-card-text">Supermarket List</h2>
-          <p class="section-projects-card-subtitle">
-            Aplicação em React.js e Express + MongoDB.
-          </p>
-          <div>
-            <a href="#">
-              <img
-                class="section-projects-card-icon"
-                src="img/icon/icon-link.png"
-                alt="Icone do link"
-              />
-            </a>
-            <a href="#">
-              <img
-                class="section-projects-card-icon"
-                src="img/icon/logo-github.png"
-                alt="Logo do GitHub"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="section-projects-card">
-          <div class="section-projects-card">
-            <img
-              class="section-projects-card-img"
-              src="img/projects/project_2.png"
-              alt=""
-            />
-            <h2 class="section-projects-card-text">BookClub</h2>
-            <p class="section-projects-card-subtitle">
-              Aplicação em React.js e Express + Sequelize.
-            </p>
-            <div>
-              <a href="#">
-                <img
-                  class="section-projects-card-icon"
-                  src="img/icon/icon-link.png"
-                  alt="Icone do link"
-                />
-              </a>
-              <a href="#">
-                <img
-                  class="section-projects-card-icon"
-                  src="img/icon/logo-github.png"
-                  alt="Logo do GitHub"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="section-projects-card">
+
+    <section>
+      <div class="section-projects" id="section-projects">
+        <h2 class="section-projects-title">Porfólio</h2>
+        <h2 class="section-projects-green-title">de projetos.</h2>
+        <div class="section-projects-card-container">
           <div class="section-projects-card">
             <img
               class="section-projects-card-img"
@@ -270,14 +222,68 @@
               Aplicação em React.js e Express + MongoDB.
             </p>
             <div>
-              <a href="#">
+              <a>
                 <img
                   class="section-projects-card-icon"
                   src="img/icon/icon-link.png"
                   alt="Icone do link"
                 />
               </a>
-              <a href="#">
+              <a>
+                <img
+                  class="section-projects-card-icon"
+                  src="img/icon/logo-github.png"
+                  alt="Logo do GitHub"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="section-projects-card">
+            <img
+              class="section-projects-card-img"
+              src="img/projects/project_2.png"
+              alt=""
+            />
+            <h2 class="section-projects-card-text">BookClub</h2>
+            <p class="section-projects-card-subtitle">
+              Aplicação em React.js e Express + Sequelize.
+            </p>
+            <div>
+              <a>
+                <img
+                  class="section-projects-card-icon"
+                  src="img/icon/icon-link.png"
+                  alt="Icone do link"
+                />
+              </a>
+              <a>
+                <img
+                  class="section-projects-card-icon"
+                  src="img/icon/logo-github.png"
+                  alt="Logo do GitHub"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="section-projects-card">
+            <img
+              class="section-projects-card-img"
+              src="img/projects/project_1.png"
+              alt=""
+            />
+            <h2 class="section-projects-card-text">Supermarket List</h2>
+            <p class="section-projects-card-subtitle">
+              Aplicação em React.js e Express + MongoDB.
+            </p>
+            <div>
+              <a>
+                <img
+                  class="section-projects-card-icon"
+                  src="img/icon/icon-link.png"
+                  alt="Icone do link"
+                />
+              </a>
+              <a>
                 <img
                   class="section-projects-card-icon"
                   src="img/icon/logo-github.png"
@@ -289,114 +295,127 @@
         </div>
       </div>
     </section>
-    <section class="section-experiences" id="section-experiences">
-      <h2 class="section-experiences-title">Experiências</h2>
-      <h2 class="section-experiences-green-title">profissionais.</h2>
-      <div class="section-experiences-card-list-container">
-        <div class="section-experiences-card">
-          <img
-            class="section-experiences-card-img"
-            src="img/icon/logo-seven-apps.png"
-            alt=""
-          />
-          <div class="section-experiences-card-text-container">
-            <h2 class="section-experiences-card-text-title">
-              Front-end Developer
-            </h2>
-            <p class="section-experiences-card-text-subtitle">
-              SevenApps - Agosto de 2018 até o momento
-            </p>
-            <p class="section-experiences-card-text">
-              Desenvolvedor web responsável por criar aplicações de larga escala
-              para os clientes utilizando principalmente a tecnogia React.js.
-            </p>
-          </div>
-        </div>
-        <div class="section-experiences-card">
+
+    <section>
+      <div class="section-experiences" id="section-experiences">
+        <h2 class="section-experiences-title">Experiências</h2>
+        <h2 class="section-experiences-green-title">profissionais.</h2>
+        <div class="section-experiences-card-list-container">
           <div class="section-experiences-card">
             <img
               class="section-experiences-card-img"
-              src="img/icon/logo-best-barbers.png"
+              src="img/icon/logo-seven-apps.png"
               alt=""
             />
             <div class="section-experiences-card-text-container">
               <h2 class="section-experiences-card-text-title">
-                Freelancer - Desenvolvedor FullStack
+                Front-end Developer
               </h2>
               <p class="section-experiences-card-text-subtitle">
-                BestBarbers - Agosto de 2018 até o momento
+                SevenApps - Agosto de 2018 até o momento
               </p>
               <p class="section-experiences-card-text">
                 Desenvolvedor web responsável por criar aplicações de larga
                 escala para os clientes utilizando principalmente a tecnogia
-                React.js..
+                React.js.
               </p>
+            </div>
+          </div>
+          <div class="section-experiences-card">
+            <div class="section-experiences-card">
+              <img
+                class="section-experiences-card-img"
+                src="img/icon/logo-best-barbers.png"
+                alt=""
+              />
+              <div class="section-experiences-card-text-container">
+                <h2 class="section-experiences-card-text-title">
+                  Freelancer - Desenvolvedor FullStack
+                </h2>
+                <p class="section-experiences-card-text-subtitle">
+                  BestBarbers - Agosto de 2018 até o momento
+                </p>
+                <p class="section-experiences-card-text">
+                  Desenvolvedor web responsável por criar aplicações de larga
+                  escala para os clientes utilizando principalmente a tecnogia
+                  React.js.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section-contact" id="section-contact">
-      <h2 class="section-contact-title">Como posso</h2>
-      <h2 class="section-contact-green-title">te ajudar?</h2>
-      <p class="section-contact-text">
-        Estou à diposição para ajudar o seu projeto ou sua empresa.
-      </p>
-      <div class="section-contact-container">
-        <img
-          class="section-contact-container-icon"
-          src="img/icon/icon-mail.png"
-          alt=""
-        />
-        <a
-          href="mailto: joao@exemplo.com"
-          class="section-contact-container-text-info"
-          >joao@exemplo.com</a
-        >
-      </div>
-      <div class="section-contact-container">
-        <img
-          class="section-contact-container-icon"
-          src="img/icon/icon-phone.png"
-          alt=""
-        />
-        <a href="tel:+552799999999" class="section-contact-container-text-info"
-          >(XX) 9999-9999
-        </a>
+
+    <section>
+      <div class="section-contact" id="section-contact">
+        <h2 class="section-contact-title">Como posso</h2>
+        <h2 class="section-contact-green-title">te ajudar?</h2>
+        <p class="section-contact-text">
+          Estou à diposição para ajudar o seu projeto ou sua empresa.
+        </p>
+        <div class="section-contact-container">
+          <img
+            class="section-contact-container-icon"
+            src="img/icon/icon-mail.png"
+            alt=""
+          />
+          <a
+            href="mailto: joao@exemplo.com"
+            class="section-contact-container-text-info"
+            >joao@exemplo.com</a
+          >
+        </div>
+        <div class="section-contact-container">
+          <img
+            class="section-contact-container-icon"
+            src="img/icon/icon-phone.png"
+            alt=""
+          />
+          <a
+            href="tel:+552799999999"
+            class="section-contact-container-text-info"
+            >(XX) 9999-9999
+          </a>
+        </div>
       </div>
     </section>
 
-    <footer class="section-footer">
-      <h2 class="section-footer-name">João Ferreira</h2>
-      <div>
-        <a onclick="onClickLink('https://github.com/tiagosantosdearaujo')">
-          <img
-            class="section-footer-icon"
-            src="img/icon/logo-github.png"
-            alt="GitHub"
-          />
-        </a>
-        <a onclick="onClickLink('LINK - PARA ABRIR EM OUTRA PAGINA')">
-          <img
-            class="section-footer-icon"
-            src="img/icon/logo-linkedin.png"
-            alt="Linkedin"
-          />
-        </a>
-        <a onclick="onClickLink('LINK - PARA ABRIR EM OUTRA PAGINA')">
-          <img
-            class="section-footer-icon"
-            src="img/icon/logo-youtube.png"
-            alt="Youtube"
-          />
-        </a>
-        <a onclick="onClickLink('LINK - PARA ABRIR EM OUTRA PAGINA')">
-          <img
-            class="section-footer-icon"
-            src="img/icon/logo-instagram.png"
-            alt="Instagram"
-          />
-        </a>
+    <footer>
+      <div class="section-footer">
+        <div class="section-footer-cotainer">
+          <h2 class="section-footer-name">João Ferreira</h2>
+          <div class="section-container-icons">
+            <a onclick="onClickLink('https://github.com/tiagosantosdearaujo')">
+              <img
+                class="section-hero-container-icons-icon"
+                src="img/icon/logo-github.png"
+                alt=""
+              />
+            </a>
+            <a onclick="onClickLink('LINK - PARA ABRIR EM OUTRA PAGINA')">
+              <img
+                class="section-hero-container-icons-icon"
+                src="img/icon/logo-linkedin.png"
+                alt=""
+              />
+            </a>
+            <a onclick="onClickLink('LINK - PARA ABRIR EM OUTRA PAGINA')">
+              <img
+                class="section-hero-container-icons-icon"
+                src="img/icon/logo-youtube.png"
+                alt=""
+              />
+            </a>
+            <a onclick="onClickLink('LINK - PARA ABRIR EM OUTRA PAGINA')">
+              <img
+                class="section-hero-container-icons-icon"
+                src="img/icon/logo-instagram.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
